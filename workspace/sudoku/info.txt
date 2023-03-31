@@ -1,0 +1,47 @@
+LAMMPS World
+
+WARNING: THIS PROGRAMM IS DESIGNED TO RUN ONLY ON QUANTUM COMPUTERS OF SEVERAL THOUSAND QUBITS OR MORE
+RUNNING THIS SIMULATION ON A COMPUTER OF LESSER PERFORMANCE MAY RESULT IN A CRASH
+
+Designer's Note and Manual:
+This package contains the source code for the creation of LAMMPS simulated worlds
+complete with oceans, continents, and resident biological entities.
+There are several different worlds which may be created.
+
+World 1 is a small world, at 100000 km, or about about the size of the planet Jupiter, with a constant temperature
+World 2 is a small world - 100000km - with a variable temperature
+World 3 is a large world - 900000 km - with a constant temperature
+World 4 is a large world - 900000 km - with a variable temperature
+World 5 is even larger - 1000000000000 km - with a constant temperature
+World 6 is 1000000000000 km in size, and has a variable temperature
+
+Worlds 7, 8, 9, and 10 are even larger, experimental worlds.
+
+Worlds with a variable temperature will have more variable and extreme weather conditions
+that worlds with a constant temperature
+
+The run.py script is used to run these worlds. The worlds are run in paralled, so
+they should not interfere with one another, and using nohup, so these
+simulated worlds should not be affected by hang up signals.
+
+The files abc.py, default.txt, and firstworld.lmp were used only for the
+testing and development of the project; they are obsolete.
+
+All needed molecules are already provided in the mols directory; the Lammps World source code
+already contains the commands needed to access the molecules and convert their format accordingly.
+Therefore, there is no need to modify the mols directory or the files within. The Lammps World
+code automatically converts the files upon running, and uses their converted verions in the simulation.
+
+Use the download.py script to download LAMMPS and import the needed packages. Please run
+this script several times since it will fail on the first few runs due to the import issues.
+
+
+makec.py is the code used to build LAMMPS for these simulations. Please run this script at least
+twice before any simulation to ensure that all packages have been properly installed.
+
+
+This release also contains the file main.py, which is an experimental prototype python script which is
+designed to upload a virtual machine with the simulation onto a quantum computer in case you
+are running the simulation of off a non-quantum computer. You will need to enter "y" into the
+terminal to make the special download innitiate properly. Please note that you will only
+be able to use this feature if you already have a D-Wave Systems account.

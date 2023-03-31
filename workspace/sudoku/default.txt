@@ -1,0 +1,12 @@
+0 atoms         
+0 bonds                
+0 angles            
+0 dihedrals
+0 impropers
+
+100 atom types         
+
+
+1 1000 xlo xhi       
+1 1100 ylo yhi        
+1 1000 zlo zhi       
