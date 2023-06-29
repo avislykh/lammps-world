@@ -44,4 +44,4 @@ This release also contains the file main.py, which is an experimental prototype 
 designed to upload a virtual machine with the simulation onto a quantum computer in case you
 are running the simulation of off a non-quantum computer. You will need to enter "y" into the
 terminal to make the special download innitiate properly. Please note that you will only
-be able to use this feature if you already have a D-Wave Systems account.
+be able to use this feature if you already have a D-Wave Systems account. (feature not yet fully developed)
